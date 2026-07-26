@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Santara Kost Sumbawa",
+  "description": "Landing page for Santara Kost Sumbawa",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

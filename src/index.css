@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #002c22;
+  --color-brand-green-light: #004536;
+  --color-brand-brown: #373226;
+  --color-brand-brown-light: #524b3a;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 50s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
