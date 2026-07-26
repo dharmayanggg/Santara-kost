@@ -487,7 +487,9 @@ export default function Home() {
           </div>
           <h2 className="text-3xl font-bold text-emerald-950 mb-6 tracking-tight">Alamat & Kontak Kami</h2>
           <p className="text-stone-600 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
-            Jl. Manggis No. 1, Uma Sima, Kec. Sumbawa, Kabupaten Sumbawa, Nusa Tenggara Barat 84316
+            Gg Manggis 3, Jalan Santara No. 11, Uma Sima,<br/>
+            Kecamatan Sumbawa, Kabupaten Sumbawa Besar,<br/>
+            Nusa Tenggara Barat.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
