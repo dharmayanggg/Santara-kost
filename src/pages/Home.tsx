@@ -209,7 +209,7 @@ export default function Home() {
             </div>
             <div className="p-8 flex flex-col grow">
               <div className="text-center mb-8">
-                <span className="text-4xl font-extrabold text-emerald-700">Rp850.000</span>
+                <span className="text-4xl font-extrabold text-emerald-700">Rp950.000</span>
                 <span className="text-stone-500"> / Bulan</span>
               </div>
               
