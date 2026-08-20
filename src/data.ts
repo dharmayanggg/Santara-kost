@@ -70,10 +70,6 @@ export const faqs = [
     a: "Santara Kost adalah representasi sejati kos pusat kota sumbawa. Hanya berjarak sekitar 2-3 menit jalan kaki ke minimarket dan sentra kuliner, serta sangat berdekatan dengan pusat perkantoran pemerintahan daerah dan rumah sakit utama di Sumbawa Besar." 
   },
   { 
-    q: "Apa saja layanan tambahan berbayar yang tersedia?", 
-    a: "Untuk menambah kenyamanan kamu saat stay di Kos Bulanan Sumbawa ini, kami menyediakan layanan ekstra seperti penyewaan AC Portable, Kulkas Pribadi, akses Wi-Fi kencang tanpa batas, hingga fasilitas Mesin Cuci Bersama dengan tarif bulanan yang sangat bersahabat." 
-  },
-  { 
     q: "Apakah disediakan layanan kebersihan (cleaning service)?", 
     a: "Untuk menjaga privasi, kebersihan dalam kamar menjadi tanggung jawab masing-masing penghuni Kos Bulanan Sumbawa. Namun, area bersama seperti lorong, parkiran, dan kamar mandi luar rutin dibersihkan oleh petugas kami." 
   },
@@ -87,7 +83,7 @@ export const waNumber = "628133637913";
 export const defaultWaMsg = "Halo Admin Santara Kost, saya tertarik untuk menyewa kamar.";
 export const harianWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Harian untuk tanggal [Isi Tanggal].";
 export const mingguanWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Mingguan untuk tanggal [Isi Tanggal].";
-export const bulananWaMsg = "Halo Admin Santara Kost, mau tanya info slot kosong untuk Kost Bulanan tarif 850rb.";
+export const bulananWaMsg = "Halo Admin Santara Kost, mau tanya info slot kosong untuk Kost Bulanan tarif 950rb.";
 
 export const getWaLink = (msg: string) => `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
 export const mapLink = "https://maps.app.goo.gl/FPd58fT6Up6yLKbf8";

@@ -1,4 +1,4 @@
-import { Phone, ShieldAlert, CheckCircle2, Bed, Calendar, Clock, Star, ChevronDown, MapPin, Package, Shirt, Snowflake, Wifi, TreePine, Trash2, ShieldCheck, Building, ShoppingBag, Landmark, Banknote, X, Map } from 'lucide-react';
+import { Phone, ShieldAlert, CheckCircle2, Bed, Calendar, Clock, Star, ChevronDown, MapPin, Shirt, TreePine, Trash2, ShieldCheck, Building, ShoppingBag, Landmark, Banknote, X, Map } from 'lucide-react';
 import { testimonials, faqs, getWaLink, defaultWaMsg, harianWaMsg, mingguanWaMsg, bulananWaMsg, images, mapLink } from '../data';
 import heroBg from '../assets/images/kost_bedroom_1785052358041.jpg';
 import { useState } from 'react';
@@ -264,7 +264,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. Fasilitas & Layanan Tambahan */}
+      {/* 3. Fasilitas Gratis */}
       <section className="py-16 px-4 bg-stone-100 rounded-[3rem] mx-2 md:mx-4 my-10 shadow-inner">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -272,7 +272,7 @@ export default function Home() {
             <p className="text-stone-500">Pilihan fasilitas yang dapat digunakan bersama tanpa biaya tambahan.</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 md:gap-4 hover:border-emerald-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
               <div className="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
               <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-600 flex items-center justify-center rounded-2xl shrink-0">
@@ -325,57 +325,6 @@ export default function Home() {
               <div>
                 <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Keamanan</h4>
                 <p className="text-[10px] md:text-xs font-bold text-emerald-600 mt-1 md:mt-2 uppercase tracking-wider bg-emerald-50 px-2 py-1 rounded-full inline-block">Gratis</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-emerald-950 mb-3 tracking-tight">Layanan Tambahan</h2>
-            <p className="text-stone-500">Fasilitas ekstra opsional yang disewakan secara bulanan.</p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 hover:border-amber-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-amber-400"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-amber-50 text-amber-600 flex items-center justify-center rounded-2xl shrink-0">
-                <Snowflake className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">AC Portable</h4>
-                <p className="text-[11px] md:text-sm text-stone-600 font-medium mt-1">Rp 200rb/bln</p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 hover:border-amber-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-amber-400"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-amber-50 text-amber-600 flex items-center justify-center rounded-2xl shrink-0">
-                <Package className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Kulkas Pribadi</h4>
-                <p className="text-[11px] md:text-sm text-stone-600 font-medium mt-1">Rp 100rb/bln</p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 hover:border-amber-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-amber-400"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-amber-50 text-amber-600 flex items-center justify-center rounded-2xl shrink-0">
-                <Wifi className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Akses Wi-Fi</h4>
-                <p className="text-[11px] md:text-sm text-stone-600 font-medium mt-1">Rp 100rb/bln</p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 hover:border-amber-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-amber-400"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-amber-50 text-amber-600 flex items-center justify-center rounded-2xl shrink-0">
-                <Shirt className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Mesin Cuci</h4>
-                <p className="text-[11px] md:text-sm text-stone-600 font-medium mt-1">Rp 60rb/bln</p>
               </div>
             </div>
           </div>
