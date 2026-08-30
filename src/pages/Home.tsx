@@ -1,6 +1,6 @@
-import { Phone, ShieldAlert, CheckCircle2, Bed, Calendar, Clock, Star, ChevronDown, MapPin, Shirt, TreePine, Trash2, ShieldCheck, Building, ShoppingBag, Landmark, Banknote, X, Map } from 'lucide-react';
-import { testimonials, faqs, getWaLink, defaultWaMsg, harianWaMsg, mingguanWaMsg, bulananWaMsg, images, mapLink } from '../data';
-import heroBg from '../assets/images/kost_bedroom_1785052358041.jpg';
+import { Phone, ShieldAlert, CheckCircle2, Bed, Calendar, Clock, Star, ChevronDown, MapPin, Shirt, TreePine, Trash2, ShieldCheck, Building, ShoppingBag, Landmark, Banknote, X, Map, ArrowRight, Droplets } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { testimonials, faqs, getWaLink, defaultWaMsg, harianWaMsg, mingguanWaMsg, bulananWaMsg, images, mapLink, facadeBg } from '../data';
 import { useState } from 'react';
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       {/* 1. Header & Hero Section */}
       <header className="relative h-[600px] flex items-center justify-center overflow-hidden rounded-b-[3rem] shadow-xl shadow-stone-200/50 mx-2 md:mx-4 mt-4">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="Santara Kost Bedroom" className="w-full h-full object-cover" />
+          <img src={facadeBg} alt="Santara Kost" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-emerald-950/60 backdrop-blur-[2px]"></div>
         </div>
         
@@ -29,7 +29,7 @@ export default function Home() {
             href={getWaLink(defaultWaMsg)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-brand-green text-white font-bold px-8 py-4 rounded-full hover:bg-brand-green-light hover:scale-105 active:scale-95 transition-all shadow-xl shadow-brand-green/30"
+            className="inline-flex items-center gap-2 bg-brand-green-light text-stone-950 font-bold px-8 py-4 rounded-full hover:bg-emerald-400 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-brand-green-light/20"
           >
             <Phone className="w-5 h-5 shrink-0" />
             <span className="whitespace-nowrap">Info Lebih Lanjut</span>
@@ -77,7 +77,7 @@ export default function Home() {
             </div>
             <div className="p-8 flex flex-col grow">
               <div className="text-center mb-8">
-                <span className="text-4xl font-extrabold text-emerald-700">Rp125.000</span>
+                <span className="text-4xl font-extrabold text-emerald-700">Rp75.000</span>
                 <span className="text-stone-500"> / Hari</span>
               </div>
               
@@ -90,19 +90,11 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Kasur & Bantal</span>
+                    <span>Kasur</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Lemari Pakaian</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-stone-600">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Meja & Kursi</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-stone-600">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Kipas Angin</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
@@ -123,7 +115,7 @@ export default function Home() {
                 href={getWaLink(harianWaMsg)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold px-6 py-3.5 rounded-full hover:bg-brand-green hover:shadow-lg hover:shadow-brand-green/20 transition-all mt-auto"
+                className="w-full inline-flex items-center justify-center gap-2 bg-brand-green-light text-stone-950 font-bold px-6 py-3.5 rounded-full hover:bg-emerald-400 hover:shadow-lg hover:shadow-brand-green-light/20 transition-all mt-auto"
               >
                 Reservasi Kamar
               </a>
@@ -133,7 +125,7 @@ export default function Home() {
           {/* Paket Mingguan */}
           <div className="bg-white border border-stone-200 flex flex-col relative rounded-3xl hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase rounded-full shadow-md whitespace-nowrap">
-              Lebih Hemat 28%
+              Lebih Hemat 14%
             </div>
             <div className="bg-stone-100 p-6 text-center border-b border-stone-200 pt-8 rounded-t-3xl">
               <h3 className="text-xl font-bold text-stone-800 flex items-center justify-center gap-2">
@@ -143,7 +135,7 @@ export default function Home() {
             </div>
             <div className="p-8 flex flex-col grow">
               <div className="text-center mb-8">
-                <span className="text-4xl font-extrabold text-emerald-700">Rp630.000</span>
+                <span className="text-4xl font-extrabold text-emerald-700">Rp450.000</span>
                 <span className="text-stone-500"> / Minggu</span>
               </div>
               
@@ -156,19 +148,11 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Kasur & Bantal</span>
+                    <span>Kasur</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Lemari Pakaian</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-stone-600">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Meja & Kursi</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-stone-600">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Kipas Angin</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
@@ -189,7 +173,7 @@ export default function Home() {
                 href={getWaLink(mingguanWaMsg)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold px-6 py-3.5 rounded-full hover:bg-brand-green-light hover:shadow-lg transition-all mt-auto"
+                className="w-full inline-flex items-center justify-center gap-2 bg-brand-green-light text-stone-950 font-bold px-6 py-3.5 rounded-full hover:bg-emerald-400 hover:shadow-lg transition-all mt-auto"
               >
                 Reservasi Kamar
               </a>
@@ -199,7 +183,7 @@ export default function Home() {
           {/* Paket Bulanan */}
           <div className="bg-white border-2 border-emerald-500 flex flex-col relative rounded-3xl shadow-xl shadow-stone-200/80 hover:-translate-y-1 transition-transform duration-300">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase rounded-full shadow-md whitespace-nowrap">
-              Lebih Hemat 77%
+              Lebih Hemat 62%
             </div>
             <div className="bg-emerald-50 p-6 text-center border-b border-emerald-100 pt-8 rounded-t-3xl">
               <h3 className="text-xl font-bold text-emerald-900 flex items-center justify-center gap-2">
@@ -209,7 +193,7 @@ export default function Home() {
             </div>
             <div className="p-8 flex flex-col grow">
               <div className="text-center mb-8">
-                <span className="text-4xl font-extrabold text-emerald-700">Rp950.000</span>
+                <span className="text-4xl font-extrabold text-emerald-700">Rp850.000</span>
                 <span className="text-stone-500"> / Bulan</span>
               </div>
               
@@ -222,19 +206,11 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Kasur & Bantal</span>
+                    <span>Kasur</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Lemari Pakaian</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-stone-600">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Meja & Kursi</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-stone-600">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>Kipas Angin</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
@@ -255,7 +231,7 @@ export default function Home() {
                 href={getWaLink(bulananWaMsg)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 border-2 border-brand-green bg-brand-green text-white font-bold px-6 py-3.5 rounded-full hover:bg-brand-green hover:border-brand-green-light transition-all mt-auto"
+                className="w-full inline-flex items-center justify-center gap-2 bg-brand-green-light text-stone-950 font-bold px-6 py-3.5 rounded-full hover:bg-emerald-400 transition-all mt-auto"
               >
                 Info Lebih Lanjut
               </a>
@@ -266,67 +242,27 @@ export default function Home() {
 
       {/* 3. Fasilitas Gratis */}
       <section className="py-16 px-4 bg-stone-100 rounded-[3rem] mx-2 md:mx-4 my-10 shadow-inner">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-emerald-950 mb-4 tracking-tight">Fasilitas Gratis</h2>
             <p className="text-stone-500">Pilihan fasilitas yang dapat digunakan bersama tanpa biaya tambahan.</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-            <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 md:gap-4 hover:border-emerald-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-600 flex items-center justify-center rounded-2xl shrink-0">
-                <MapPin className="w-5 h-5 md:w-6 md:h-6" />
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {[
+              { icon: MapPin, label: "Parkir Luas" },
+              { icon: TreePine, label: "Mini Garden" },
+              { icon: Shirt, label: "Cuci & Jemur" },
+              { icon: Trash2, label: "Iuran Sampah" },
+              { icon: ShieldCheck, label: "Keamanan" },
+              { icon: Droplets, label: "Air Mandi" },
+            ].map((facility, idx) => (
+              <div key={idx} className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center justify-center text-center hover:border-emerald-300 hover:shadow-lg transition-all">
+                <facility.icon className="w-10 h-10 md:w-12 md:h-12 text-emerald-600 mb-4 shrink-0" />
+                <h4 className="font-semibold text-stone-800 text-sm md:text-base mb-1.5 md:mb-2">{facility.label}</h4>
+                <p className="text-[10px] md:text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1.5 rounded-full inline-block">Gratis</p>
               </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Parkir Luas</h4>
-                <p className="text-[10px] md:text-xs font-bold text-emerald-600 mt-1 md:mt-2 uppercase tracking-wider bg-emerald-50 px-2 py-1 rounded-full inline-block">Gratis</p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 md:gap-4 hover:border-emerald-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-600 flex items-center justify-center rounded-2xl shrink-0">
-                <TreePine className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Mini Garden</h4>
-                <p className="text-[10px] md:text-xs font-bold text-emerald-600 mt-1 md:mt-2 uppercase tracking-wider bg-emerald-50 px-2 py-1 rounded-full inline-block">Gratis</p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 md:gap-4 hover:border-emerald-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-600 flex items-center justify-center rounded-2xl shrink-0">
-                <Shirt className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Cuci & Jemur</h4>
-                <p className="text-[10px] md:text-xs font-bold text-emerald-600 mt-1 md:mt-2 uppercase tracking-wider bg-emerald-50 px-2 py-1 rounded-full inline-block">Gratis</p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 md:gap-4 hover:border-emerald-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-600 flex items-center justify-center rounded-2xl shrink-0">
-                <Trash2 className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Iuran Sampah</h4>
-                <p className="text-[10px] md:text-xs font-bold text-emerald-600 mt-1 md:mt-2 uppercase tracking-wider bg-emerald-50 px-2 py-1 rounded-full inline-block">Gratis</p>
-              </div>
-            </div>
-
-            <div className="col-span-2 md:col-span-1 bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center text-center gap-3 md:gap-4 hover:border-emerald-400 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-emerald-500"></div>
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-emerald-50 text-emerald-600 flex items-center justify-center rounded-2xl shrink-0">
-                <ShieldCheck className="w-5 h-5 md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-stone-800 text-sm md:text-base leading-tight">Keamanan</h4>
-                <p className="text-[10px] md:text-xs font-bold text-emerald-600 mt-1 md:mt-2 uppercase tracking-wider bg-emerald-50 px-2 py-1 rounded-full inline-block">Gratis</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -337,7 +273,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-emerald-950 mb-4 tracking-tight">Lokasi Sangat Strategis</h2>
           <p className="text-stone-500 mb-12">Berada di pusat kota, memudahkan semua aktivitas harian kamu.</p>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 text-left">
             {[
               { icon: ShoppingBag, label: "Indomaret", time: "1 menit" },
               { icon: TreePine, label: "Taman Mangga", time: "4 menit" },
@@ -345,11 +281,9 @@ export default function Home() {
               { icon: Building, label: "Rumah Sakit", time: "5 menit" },
               { icon: ShieldAlert, label: "Kantor Polisi", time: "5 menit" },
               { icon: Banknote, label: "ATM Terdekat", time: "5 menit" },
-              { icon: ShoppingBag, label: "Pertokoan", time: "5 menit" },
-              { icon: Landmark, label: "Pasar", time: "7 menit" },
             ].map((loc, idx) => (
               <div key={idx} className="bg-white rounded-3xl border border-stone-200 p-5 md:p-6 flex flex-col items-center justify-center text-center hover:border-emerald-300 hover:shadow-lg transition-all">
-                <loc.icon className="w-7 h-7 md:w-8 md:h-8 text-emerald-600 mb-3 shrink-0" />
+                <loc.icon className="w-10 h-10 md:w-12 md:h-12 text-emerald-600 mb-4 shrink-0" />
                 <h4 className="font-semibold text-stone-800 text-sm md:text-base mb-1.5 md:mb-2">{loc.label}</h4>
                 <p className="text-[10px] md:text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1.5 rounded-full inline-block">{loc.time}</p>
               </div>
@@ -381,47 +315,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Tata Tertib */}
+      {/* 5. Tata Tertib & Peraturan */}
       <section className="py-20 px-4">
         <div className="max-w-5xl mx-auto bg-emerald-900 p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-brand-green/30">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="bg-emerald-800 p-5 rounded-3xl shrink-0 text-amber-400">
               <ShieldAlert className="w-12 h-12" />
             </div>
-            <div>
-              <h2 className="text-2xl font-bold text-white mb-6 leading-snug tracking-tight">
-                Demi Kenyamanan & Keamanan Bersama,<br className="hidden md:block"/> Santara Kost Menerapkan Aturan Ketat:
-              </h2>
+            <div className="w-full">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <div>
+                  <span className="text-amber-400 text-xs font-bold uppercase tracking-wider">Tertib & Aman</span>
+                  <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mt-1">
+                    Ringkasan Peraturan Kost
+                  </h2>
+                </div>
+                <Link 
+                  to="/peraturan" 
+                  className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-5 py-2.5 rounded-full text-sm transition-colors self-start sm:self-auto shrink-0 shadow-md"
+                >
+                  <span>Lihat 13 Peraturan Lengkap</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
               
-              <ul className="space-y-5 text-stone-200">
-                <li className="flex gap-4">
+              <ul className="space-y-4 text-stone-200">
+                <li className="flex gap-4 items-start">
                   <div className="w-2.5 h-2.5 bg-amber-500 mt-2 shrink-0 rounded-full"></div>
                   <div>
-                    <strong className="text-white">Jam Malam:</strong> Gerbang dikunci tepat pukul <strong>24.00 WITA</strong> (Jam 12 malam).
+                    <strong className="text-white">Bebas Stay Berdua:</strong> Penghuni bebas tinggal berdua dalam satu kamar tanpa biaya tambahan (maks. 2 orang).
                   </div>
                 </li>
-                <li className="flex gap-4">
+                <li className="flex gap-4 items-start">
                   <div className="w-2.5 h-2.5 bg-amber-500 mt-2 shrink-0 rounded-full"></div>
                   <div>
-                    <strong className="text-white">Batasan Tamu:</strong> Tidak boleh membawa teman berkunjung lebih dari 4 orang ke dalam kamar. Teman menginap diizinkan asal menjaga ketertiban.
+                    <strong className="text-white">Tamu Maksimal 2 Orang:</strong> Boleh menerima tamu maksimal 2 orang dalam satu waktu dengan tetap menjaga ketenangan bersama.
                   </div>
                 </li>
-                <li className="flex gap-4">
+                <li className="flex gap-4 items-start">
                   <div className="w-2.5 h-2.5 bg-amber-500 mt-2 shrink-0 rounded-full"></div>
                   <div>
-                    <strong className="text-white">Lingkungan Sehat:</strong> Dilarang keras mengonsumsi Miras (Minuman Keras), membawa Sajam (Senjata Tajam), dan Narkoba.
+                    <strong className="text-white">Dilarang Minuman Keras:</strong> Segala jenis minuman beralkohol/keras dilarang keras di lingkungan Santara Kost.
                   </div>
                 </li>
-                <li className="flex gap-4">
+                <li className="flex gap-4 items-start">
                   <div className="w-2.5 h-2.5 bg-amber-500 mt-2 shrink-0 rounded-full"></div>
                   <div>
-                    <strong className="text-white">Kebersihan:</strong> Wajib menjaga kebersihan kamar dan area bersama kost.
+                    <strong className="text-white">Jam Malam 01.00 WITA:</strong> Jam malam maksimal pukul 01.00 WITA untuk menjaga ketenangan istirahat penghuni.
+                  </div>
+                </li>
+                <li className="flex gap-4 items-start">
+                  <div className="w-2.5 h-2.5 bg-amber-500 mt-2 shrink-0 rounded-full"></div>
+                  <div>
+                    <strong className="text-white">Fasilitas Gratis:</strong> Air dan iuran sampah 100% gratis tanpa biaya tambahan.
                   </div>
                 </li>
               </ul>
               
-              <div className="mt-8 pt-6 border-t border-brand-green text-sm text-stone-300 font-medium leading-relaxed">
-                Catatan: Lingkungan sekitar kost banyak dihuni oleh aparat Kepolisian. Segala bentuk keributan, tindakan kriminal, atau pelanggaran (terutama miras & narkoba) akan <strong>langsung dilaporkan ke pihak RT dan Kepolisian</strong>.
+              <div className="mt-8 pt-6 border-t border-brand-green flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div className="text-sm text-stone-300 font-medium leading-relaxed">
+                  SANTARA KOST — Nyaman, Bebas, Tetap Beraturan.
+                </div>
+                <Link 
+                  to="/peraturan"
+                  className="text-amber-400 hover:text-amber-300 font-semibold text-sm inline-flex items-center gap-1.5 transition-colors"
+                >
+                  <span>Baca ketentuan & harga lengkap sewa</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </div>
@@ -436,9 +397,8 @@ export default function Home() {
           </div>
           <h2 className="text-3xl font-bold text-emerald-950 mb-6 tracking-tight">Alamat & Kontak Kami</h2>
           <p className="text-stone-600 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
-            Gg Manggis 3, Jalan Santara No. 11, Uma Sima,<br/>
-            Kecamatan Sumbawa, Kabupaten Sumbawa Besar,<br/>
-            Nusa Tenggara Barat.
+            Jalan Baru, Gang Manggis 3, Uma Sima,<br/>
+            Sumbawa Besar, NTB.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
@@ -454,7 +414,7 @@ export default function Home() {
               href={getWaLink(defaultWaMsg)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-brand-green text-white font-semibold px-6 py-3.5 rounded-full hover:bg-brand-green-light transition-colors w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2 bg-brand-green-light text-stone-950 font-bold px-6 py-3.5 rounded-full hover:bg-emerald-400 transition-colors w-full sm:w-auto justify-center shadow-md shadow-brand-green-light/20"
             >
               <Phone className="w-5 h-5" />
               Hubungi via WhatsApp

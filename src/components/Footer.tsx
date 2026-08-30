@@ -1,10 +1,22 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <footer className="bg-brand-green py-12 text-center border-t border-brand-green-light mt-auto">
-      <div className="flex justify-center mb-6">
-        <span className="inline-block px-5 py-2 bg-brand-green-light text-stone-300 text-xs font-bold tracking-wider uppercase rounded-full shadow-inner">
-          Santara <span className="text-amber-400">Kost</span> Sumbawa
-        </span>
+      <div className="flex justify-center mb-8">
+        <Link to="/" className="inline-block p-2">
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://raw.githubusercontent.com/dharmayanggg/storage-image/main/logo%20santara%20transparant.png" 
+              alt="Santara Kost Logo" 
+              className="h-10 md:h-12 w-auto object-contain"
+            />
+            <div className="flex flex-col justify-center pt-1 text-left">
+              <span className="font-bold text-[#FFD700] text-lg md:text-xl leading-none tracking-widest" style={{ fontFamily: "'Playfair Display', serif" }}>SANTARA KOST</span>
+              <span className="text-white text-lg md:text-xl leading-none -mt-1 ml-0.5" style={{ fontFamily: "'Caveat', cursive", transform: 'rotate(-2deg)' }}>Sumbawa</span>
+            </div>
+          </div>
+        </Link>
       </div>
       
       {/* SEO Text Block */}

@@ -1,11 +1,9 @@
-import heroBg from './assets/images/kost_bedroom_1785052358041.jpg';
-import facadeBg from './assets/images/kost_facade_1785052929885.jpg';
-import bathroomBg from './assets/images/kost_bathroom_1785052942627.jpg';
-import gardenBg from './assets/images/kost_mini_garden_1785057357198.jpg';
-import parkingBg from './assets/images/kost_parking_area_1785053584372.jpg';
-import bedroom2Bg from './assets/images/kost_bedroom_2_1785053596775.jpg';
+export const heroBg = "https://raw.githubusercontent.com/dharmayanggg/storage-image/main/Kamar%20kost.jpg";
+export const facadeBg = "https://raw.githubusercontent.com/dharmayanggg/storage-image/main/depan%20kost.jpg";
+export const bathroomBg = "https://raw.githubusercontent.com/dharmayanggg/storage-image/main/WC%20kost.png";
+export const kitchenBg = "https://raw.githubusercontent.com/dharmayanggg/storage-image/main/dapur%20kost.jpg";
 
-export const images = [facadeBg, heroBg, bedroom2Bg, bathroomBg, gardenBg, parkingBg];
+export const images = [facadeBg, heroBg, kitchenBg, bathroomBg];
 
 export const testimonials = [
   { 
@@ -22,68 +20,53 @@ export const testimonials = [
     name: "Andi Pratama", 
     role: "Mahasiswa", 
     text: "Sebagai mahasiswa, cari Kos Murah Sumbawa sangat penting. Di sini saya dapat harga pas dengan fasilitas wow. Jarak ke kampus dan Rumah Sakit juga dekat, pusat perbelanjaan mudah diakses." 
-  },
-  { 
-    name: "Siti Aminah", 
-    role: "Karyawati", 
-    text: "Kost Sumbawa Besar ini sangat strategis. Kamar mandinya bersih, air lancar terus. Lingkungan sekitar sama sekali tidak berisik, sangat cocok untuk beristirahat setelah lelah bekerja seharian." 
-  },
-  { 
-    name: "Doni Kurniawan", 
-    role: "Wiraswasta", 
-    text: "Nyari kos di bawah satu juta sumbawa dengan kamar luas 4x4m dan fasilitas sekomplit ini jarang banget. Suka banget sama ruangannya, bisa naruh banyak barang tanpa kerasa sempit sedikitpun." 
-  },
-  { 
-    name: "Eka Saputra", 
-    role: "PNS", 
-    text: "Fasilitas kos kota sumbawa terbaik yang pernah saya tempati. Ke kantor pemerintahan cuma butuh beberapa menit. Sangat menghemat waktu dan tenaga, ibu kostnya juga sangat ramah dan responsif." 
   }
 ];
 
 export const faqs = [
   { 
     q: "Apakah ada jam malam di Santara Kost?", 
-    a: "Ya, demi menjaga keamanan dan kenyamanan penghuni, gerbang akan dikunci tepat pukul 24.00 WITA. Ini adalah standar keamanan yang kami terapkan sebagai Kost Sumbawa Besar pilihan keluarga dan pekerja profesional." 
+    a: "Jam malam maksimal adalah pukul 01.00 WITA. Setelah jam tersebut, kami mengimbau penghuni untuk menjaga volume suara dan tidak melakukan aktivitas yang mengganggu kenyamanan penghuni lainnya." 
   },
   { 
     q: "Bagaimana sistem pembayaran listriknya?", 
-    a: "Sistem kelistrikan kami menggunakan token sendiri (meteran masing-masing per kamar). Hal ini membuat pemakaian jauh lebih transparan, hemat, dan adil. Sangat cocok bagi kamu yang mencari Kos Bulanan Sumbawa dengan manajemen keuangan pribadi yang lebih terukur." 
+    a: "Sistem kelistrikan kami menggunakan token sendiri (meteran masing-masing per kamar). Pengisian token menjadi tanggung jawab masing-masing penghuni sehingga pemakaian jauh lebih transparan dan adil." 
   },
   { 
-    q: "Apakah bisa disewa untuk pasangan?", 
-    a: "Ini adalah kos eksklusif dan bebas namun tertib. Bisa disewa untuk pasangan dengan syarat melampirkan KTP dan foto wajah saat reservasi (dokumen pernikahan tidak diwajibkan). Kami menjamin privasi kamu tetap terjaga selama mematuhi norma lingkungan kos kota sumbawa." 
+    q: "Apakah bisa disewa untuk pasangan atau berdua?", 
+    a: "Bisa! Penghuni bebas tinggal berdua dalam satu kamar tanpa biaya tambahan, selama jumlah penghuni maksimal 2 orang per kamar." 
   },
   { 
     q: "Apakah ada opsi sewa untuk jangka pendek?", 
-    a: "Tentu! Kami menyediakan opsi Kos Harian Sumbawa dan mingguan yang sangat ideal bagi para pendatang, backpacker, atau urusan bisnis singkat, dengan fasilitas lengkap langsung pakai tanpa ribet membawa perabotan." 
+    a: "Tentu! Kami menyediakan opsi Kos Harian Sumbawa (Rp75.000/hari) dan Mingguan (Rp450.000/minggu) yang sangat ideal bagi para pendatang atau urusan singkat dengan fasilitas kamar lengkap." 
   },
   { 
-    q: "Apakah teman atau tamu boleh datang menginap?", 
-    a: "Teman diperbolehkan menginap dengan syarat utama menjaga ketertiban (tidak mabuk, miras, dan ribut). Kami memiliki aturan tegas larangan miras/narkoba demi mempertahankan reputasi kami sebagai Kos Murah Sumbawa yang aman. Pelanggar langsung kami laporkan ke RT/Kepolisian setempat." 
+    q: "Apakah teman atau tamu boleh datang berkunjung?", 
+    a: "Boleh menerima teman atau tamu dengan ketentuan maksimal 2 orang tamu dalam satu waktu, serta tetap menjaga ketenangan dan kenyamanan lingkungan kost." 
   },
   { 
-    q: "Fasilitas area bersama apa saja yang didapat?", 
-    a: "Berbeda dengan tempat lain, kami menyediakan area Parkir Kendaraan Luas, Tempat Cuci & Jemur Pakaian, dan Mini Garden Tempat Nongkrong asri yang bisa diakses gratis. Sangat worth it untuk kelas Kos di bawah satu juta sumbawa." 
+    q: "Fasilitas area bersama apa saja yang didapat gratis?", 
+    a: "Air dan iuran sampah sudah gratis tanpa biaya tambahan. Selain itu tersedia area Parkir Luas, Tempat Cuci & Jemur Pakaian, dan Mini Garden yang dapat diakses bersama." 
   },
   { 
     q: "Seberapa strategis lokasi Santara Kost ini?", 
-    a: "Santara Kost adalah representasi sejati kos pusat kota sumbawa. Hanya berjarak sekitar 2-3 menit jalan kaki ke minimarket dan sentra kuliner, serta sangat berdekatan dengan pusat perkantoran pemerintahan daerah dan rumah sakit utama di Sumbawa Besar." 
+    a: "Santara Kost adalah representasi sejati kos pusat kota sumbawa di Uma Sima. Hanya 1 menit ke Indomaret, serta hanya 4-5 menit ke perkantoran pemerintahan daerah, rumah sakit, dan pusat perbelanjaan." 
   },
   { 
-    q: "Apakah disediakan layanan kebersihan (cleaning service)?", 
-    a: "Untuk menjaga privasi, kebersihan dalam kamar menjadi tanggung jawab masing-masing penghuni Kos Bulanan Sumbawa. Namun, area bersama seperti lorong, parkiran, dan kamar mandi luar rutin dibersihkan oleh petugas kami." 
+    q: "Apakah disediakan layanan perawatan dan kebersihan kost?", 
+    a: "Area kost dibersihkan oleh petugas kami 1× setiap bulan, termasuk perawatan berkala dan pemeliharaan properti untuk menjaga kenyamanan seluruh penghuni." 
   },
   { 
-    q: "Bagaimana cara booking dan pembayaran awalnya?", 
-    a: "kamu bisa langsung klik tombol WhatsApp untuk mengecek ketersediaan. Setelah deal, pembayaran sewa Kos Murah Sumbawa ini dilakukan full payment di awal bulan melalui transfer bank atau tunai." 
+    q: "Bagaimana cara booking dan pembayaran sewa?", 
+    a: "Pembayaran sewa dilakukan di muka untuk periode sewa berikutnya via transfer bank atau tunai. Hubungi kami via WhatsApp untuk mengecek ketersediaan kamar." 
   }
 ];
 
 export const waNumber = "628133637913";
 export const defaultWaMsg = "Halo Admin Santara Kost, saya tertarik untuk menyewa kamar.";
-export const harianWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Harian untuk tanggal [Isi Tanggal].";
-export const mingguanWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Mingguan untuk tanggal [Isi Tanggal].";
-export const bulananWaMsg = "Halo Admin Santara Kost, mau tanya info slot kosong untuk Kost Bulanan tarif 950rb.";
+export const harianWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Harian (tarif 75rb) untuk tanggal [Isi Tanggal].";
+export const mingguanWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Mingguan (tarif 450rb) untuk tanggal [Isi Tanggal].";
+export const bulananWaMsg = "Halo Admin Santara Kost, mau tanya info slot kosong untuk Kost Bulanan tarif 850rb.";
 
 export const getWaLink = (msg: string) => `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
 export const mapLink = "https://maps.app.goo.gl/FPd58fT6Up6yLKbf8";

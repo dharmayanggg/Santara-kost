@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import About from './pages/About';
+import Rules from './pages/Rules';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopButton from './components/ScrollToTopButton';
 
@@ -23,6 +24,8 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
+            <Route path="/peraturan" element={<Rules />} />
+            <Route path="/rules" element={<Rules />} />
           </Routes>
         </main>
         <Footer />

@@ -33,9 +33,8 @@ export default function About() {
             <div className="flex items-start justify-center gap-4 mb-6">
               <MapPin className="w-6 h-6 text-emerald-600 shrink-0 mt-1" />
               <p className="text-lg leading-relaxed text-stone-700 text-left">
-                Gg Manggis 3, Jalan Santara No. 11, Uma Sima,<br/>
-                Kecamatan Sumbawa, Kabupaten Sumbawa Besar,<br/>
-                Nusa Tenggara Barat.
+                Jalan Baru, Gang Manggis 3, Uma Sima,<br/>
+                Sumbawa Besar, NTB.
               </p>
             </div>
             <div className="flex justify-center mb-10">
@@ -51,7 +50,7 @@ export default function About() {
                 href={getWaLink(defaultWaMsg)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 bg-amber-500 text-stone-900 font-bold px-6 py-4 rounded-full hover:bg-amber-400 hover:shadow-lg transition-all"
+                className="inline-flex w-full items-center justify-center gap-2 bg-brand-green-light text-stone-950 font-bold px-6 py-4 rounded-full hover:bg-emerald-400 hover:shadow-lg transition-all"
               >
                 <Phone className="w-5 h-5" />
                 WhatsApp 0813-3637-913
