@@ -210,16 +210,16 @@ export default function Rules() {
                 </div>
               </div>
 
-              {/* Kamar Kosongan */}
+              {/* Harga Mingguan */}
               <div className="bg-emerald-900/70 border border-emerald-700/60 rounded-3xl p-6 flex flex-col justify-between">
                 <div>
-                  <div className="text-emerald-300 font-semibold text-sm mb-1">Pilihan Ekonomis</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Kamar Kosongan</h3>
-                  <p className="text-emerald-200/90 text-sm mb-6">Kamar luas 4x4m tanpa perabotan</p>
+                  <div className="text-emerald-300 font-semibold text-sm mb-1">Pilihan Fleksibel</div>
+                  <h3 className="text-xl font-bold text-white mb-2">Harga Mingguan</h3>
+                  <p className="text-emerald-200/90 text-sm mb-6">Untuk singgah sementara</p>
                 </div>
                 <div>
                   <div className="text-3xl font-extrabold text-amber-300">
-                    Rp650.000 <span className="text-sm font-normal text-emerald-200">/ bulan</span>
+                    Rp450.000 <span className="text-sm font-normal text-emerald-200">/ minggu</span>
                   </div>
                 </div>
               </div>
@@ -233,36 +233,21 @@ export default function Rules() {
         </div>
       </section>
 
-      {/* Intinya & Tagline */}
+      {/* CTA Section */}
       <section className="px-4 max-w-4xl mx-auto w-full pb-20 text-center">
-        <div className="bg-white rounded-3xl p-8 md:p-10 border border-stone-200 shadow-sm">
-          <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl mb-4">
-            <CheckCircle2 className="w-6 h-6" />
-          </div>
-          
-          <h2 className="text-2xl font-bold text-emerald-950 mb-4">
-            🤝 INTINYA:
+        <div className="bg-white rounded-3xl p-8 md:p-10 border border-stone-200 shadow-sm flex flex-col items-center justify-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-emerald-950 mb-8">
+            Siap untuk Menetap di Santara Kost?
           </h2>
-          
-          <p className="text-stone-700 text-base md:text-lg max-w-2xl mx-auto mb-6 leading-relaxed">
-            Bebas tinggal, bebas bawa pasangan, bebas menerima tamu — selama tetap menghargai privasi, keamanan, dan kenyamanan penghuni lainnya.
-          </p>
-
-          <div className="inline-block bg-emerald-50 border border-emerald-200 px-6 py-3 rounded-full text-emerald-900 font-bold text-sm md:text-base mb-8">
-            SANTARA KOST — Nyaman, Bebas, Tetap Beraturan.
-          </div>
-
-          <div className="pt-4 border-t border-stone-100">
-            <a 
-              href={getWaLink(defaultWaMsg)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-brand-green-light text-stone-950 font-bold px-8 py-4 rounded-full hover:bg-emerald-400 transition-all shadow-lg shadow-brand-green-light/20"
-            >
-              <Phone className="w-5 h-5" />
-              <span>Tanya / Reservasi via WhatsApp</span>
-            </a>
-          </div>
+          <a 
+            href={getWaLink(defaultWaMsg)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-brand-green-light text-stone-950 font-bold px-8 py-4 rounded-full hover:bg-emerald-400 transition-all shadow-lg shadow-brand-green-light/20"
+          >
+            <Phone className="w-5 h-5" />
+            <span>Tanya / Reservasi via WhatsApp</span>
+          </a>
         </div>
       </section>
     </div>
