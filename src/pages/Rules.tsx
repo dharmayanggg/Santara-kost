@@ -73,9 +73,9 @@ export default function Rules() {
     {
       num: 8,
       title: "JAM MALAM",
-      desc: "Jam malam maksimal pukul 01.00 WITA. Setelah jam tersebut, mohon menjaga volume suara dan tidak membuat aktivitas yang mengganggu penghuni lainnya.",
+      desc: "Jam malam maksimal pukul 23.00 Wita. Setelah jam tersebut, mohon menjaga volume suara dan tidak membuat aktivitas yang mengganggu penghuni lainnya.",
       icon: Moon,
-      badge: "Maks. 01.00 WITA"
+      badge: "Maks. 23.00 Wita"
     },
     {
       num: 9,
