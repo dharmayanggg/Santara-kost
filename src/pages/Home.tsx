@@ -77,7 +77,7 @@ export default function Home() {
             </div>
             <div className="p-8 flex flex-col grow">
               <div className="text-center mb-8">
-                <span className="text-4xl font-extrabold text-emerald-700">Rp100.000</span>
+                <span className="text-4xl font-extrabold text-emerald-700">Rp85.000</span>
                 <span className="text-stone-500"> / Hari</span>
               </div>
               
@@ -98,15 +98,15 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                    <span>Kipas Angin</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-stone-600">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Kamar Mandi Dalam</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Dapur</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-stone-700 font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
-                    <span>Bonus: Sabun, Shampo, Handuk, Air</span>
                   </li>
                 </ul>
               </div>
@@ -125,7 +125,7 @@ export default function Home() {
           {/* Paket Mingguan */}
           <div className="bg-white border border-stone-200 flex flex-col relative rounded-3xl hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase rounded-full shadow-md whitespace-nowrap">
-              Lebih Hemat 14%
+              Lebih Hemat 8%
             </div>
             <div className="bg-stone-100 p-6 text-center border-b border-stone-200 pt-8 rounded-t-3xl">
               <h3 className="text-xl font-bold text-stone-800 flex items-center justify-center gap-2">
@@ -135,7 +135,7 @@ export default function Home() {
             </div>
             <div className="p-8 flex flex-col grow">
               <div className="text-center mb-8">
-                <span className="text-4xl font-extrabold text-emerald-700">Rp450.000</span>
+                <span className="text-4xl font-extrabold text-emerald-700">Rp550.000</span>
                 <span className="text-stone-500"> / Minggu</span>
               </div>
               
@@ -156,15 +156,15 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                    <span>Kipas Angin</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-stone-600">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Kamar Mandi Dalam</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Dapur</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-stone-700 font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
-                    <span>Bonus: Sabun, Shampo, Handuk</span>
                   </li>
                 </ul>
               </div>
@@ -183,7 +183,7 @@ export default function Home() {
           {/* Paket Bulanan */}
           <div className="bg-white border-2 border-emerald-500 flex flex-col relative rounded-3xl shadow-xl shadow-stone-200/80 hover:-translate-y-1 transition-transform duration-300">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase rounded-full shadow-md whitespace-nowrap">
-              Lebih Hemat 62%
+              Lebih Hemat 67%
             </div>
             <div className="bg-emerald-50 p-6 text-center border-b border-emerald-100 pt-8 rounded-t-3xl">
               <h3 className="text-xl font-bold text-emerald-900 flex items-center justify-center gap-2">
@@ -211,6 +211,10 @@ export default function Home() {
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                     <span>Lemari Pakaian</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-stone-600">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                    <span>Kipas Angin</span>
                   </li>
                   <li className="flex items-start gap-3 text-stone-600">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />

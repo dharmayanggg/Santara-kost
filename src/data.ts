@@ -38,7 +38,7 @@ export const faqs = [
   },
   { 
     q: "Apakah ada opsi sewa untuk jangka pendek?", 
-    a: "Tentu! Kami menyediakan opsi Kos Harian Sumbawa (Rp100.000/hari) dan Mingguan (Rp450.000/minggu) yang sangat ideal bagi para pendatang atau urusan singkat dengan fasilitas kamar lengkap." 
+    a: "Tentu! Kami menyediakan opsi Kos Harian Sumbawa (Rp85.000/hari) dan Mingguan (Rp550.000/minggu) yang sangat ideal bagi para pendatang atau urusan singkat dengan fasilitas kamar lengkap." 
   },
   { 
     q: "Apakah teman atau tamu boleh datang berkunjung?", 
@@ -64,8 +64,8 @@ export const faqs = [
 
 export const waNumber = "628133637913";
 export const defaultWaMsg = "Halo Admin Santara Kost, saya tertarik untuk menyewa kamar.";
-export const harianWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Harian (tarif 100rb) untuk tanggal [Isi Tanggal].";
-export const mingguanWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Mingguan (tarif 450rb) untuk tanggal [Isi Tanggal].";
+export const harianWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Harian (tarif 85rb) untuk tanggal [Isi Tanggal].";
+export const mingguanWaMsg = "Halo Admin Santara Kost, saya mau booking kamar Mingguan (tarif 550rb) untuk tanggal [Isi Tanggal].";
 export const bulananWaMsg = "Halo Admin Santara Kost, mau tanya info slot kosong untuk Kost Bulanan tarif 850rb.";
 
 export const getWaLink = (msg: string) => `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;

@@ -201,7 +201,7 @@ export default function Rules() {
                 <div>
                   <div className="text-amber-400 font-semibold text-sm mb-1">Paling Populer</div>
                   <h3 className="text-xl font-bold text-white mb-2">Kamar Isi</h3>
-                  <p className="text-emerald-200/90 text-sm mb-6">Dilengkapi kasur & lemari pakaian</p>
+                  <p className="text-emerald-200/90 text-sm mb-6">Dilengkapi kasur, lemari & kipas angin</p>
                 </div>
                 <div>
                   <div className="text-3xl font-extrabold text-amber-300">
@@ -219,7 +219,7 @@ export default function Rules() {
                 </div>
                 <div>
                   <div className="text-3xl font-extrabold text-amber-300">
-                    Rp450.000 <span className="text-sm font-normal text-emerald-200">/ minggu</span>
+                    Rp550.000 <span className="text-sm font-normal text-emerald-200">/ minggu</span>
                   </div>
                 </div>
               </div>
